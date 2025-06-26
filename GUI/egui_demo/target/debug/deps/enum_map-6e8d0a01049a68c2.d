@@ -1,0 +1,11 @@
+C:\Programming\Rust\GUI\egui_demo\target\debug\deps\libenum_map-6e8d0a01049a68c2.rmeta: C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\lib.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\enum_map_impls.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\internal.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\iter.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\serde.rs
+
+C:\Programming\Rust\GUI\egui_demo\target\debug\deps\libenum_map-6e8d0a01049a68c2.rlib: C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\lib.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\enum_map_impls.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\internal.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\iter.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\serde.rs
+
+C:\Programming\Rust\GUI\egui_demo\target\debug\deps\enum_map-6e8d0a01049a68c2.d: C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\lib.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\enum_map_impls.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\internal.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\iter.rs C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\serde.rs
+
+C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\lib.rs:
+C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\enum_map_impls.rs:
+C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\internal.rs:
+C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\iter.rs:
+C:\Users\kinge\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\enum-map-2.7.3\src\serde.rs:

@@ -4,3 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+eframe = "0.27"  # Check crates.io for the latest version
+egui_extras = "0.27"  # Optional, for image support
