@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tauri Simple App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* ... your existing CSS ... */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hello from Tauri!</h1>
+    <button id="btn">Click me</button>
+    <div id="fruits-list"></div>
+  </div>
+
+ 
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const btn = document.getElementById("btn");
+      
+      btn.addEventListener("click", async () => {
+        try {
+          // Use the correct API path
+          const fruit = await window.__TAURI__.tauri.invoke('get_fruit');
+          
+          if (fruit) {
+            const fruitBox = document.createElement("div");
+            fruitBox.className = "fruit-box";
+            fruitBox.textContent = fruit;
+            document.getElementById("fruits-list").appendChild(fruitBox);
+          } else {
+            alert("All fruits have been added!");
+          }
+        } catch (error) {
+          console.error("Error calling Rust function:", error);
+          
+          // Fallback for debugging
+          const fruits = ["Apple", "Banana", "Cherry", "Mango", "Pineapple"];
+          const randomFruit = fruits[Math.floor(Math.random() * fruits.length)];
+          
+          const fruitBox = document.createElement("div");
+          fruitBox.className = "fruit-box";
+          fruitBox.textContent = "JS: " + randomFruit;
+          fruitBox.style.background = "linear-gradient(120deg, #ff9a9e 0%, #fad0c4 100%)";
+          document.getElementById("fruits-list").appendChild(fruitBox);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,2 +1,5 @@
 GUI/rustDruidGUI/target/
 GUI/egui_dempo/target/
+GUI/iced_demo/target/
+GUI/tauri_demo/node_modules
+GUI/tauri_demo/src-tauri/target
