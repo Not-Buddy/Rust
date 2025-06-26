@@ -57,6 +57,13 @@ fn main()
     let mut count=0;
     loop
     {
+        cout+=1;
+        println!("Count right now: {}",count);
+        if count == 2
+        {
+            break;        
+        }  
+        
         
     }
 }
