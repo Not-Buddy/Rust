@@ -4,4 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-iced = "0.13"  # Check crates.io for the latest version
+iced = { version = "0.13", features = ["advanced"] }
+theme = "0.0.3"
