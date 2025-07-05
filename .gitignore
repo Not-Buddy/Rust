@@ -5,3 +5,6 @@ GUI/tauri_demo/node_modules/
 GUI/tauri_demo/src-tauri/target/
 GUI/rustDruidGUI/target/
 hello_rust/target/
+docs
+guessing_game/target
+variables/target
