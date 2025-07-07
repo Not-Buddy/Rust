@@ -8,3 +8,5 @@ hello_rust/target/
 docs
 guessing_game/target
 variables/target
+*.exe
+*.pdb
