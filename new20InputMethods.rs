@@ -25,13 +25,14 @@ fn main(){
     println!("{:?} ", nums);
 
     let mut input2 = String::new();
-    
+
+
+    println!("Enter 3 numbers separated by whitespace :-");
     io::stdin()
     .read_line(&mut input2)
     .expect("Error reading input2");
 
 
-    println!("Enter 3 numbers separated by whitespace :-");
     let mut iter = input2.split_whitespace();
 
     let a : i32 = iter.next().expect("Failed to read 1st").parse().expect("Not a number");
@@ -39,5 +40,23 @@ fn main(){
     let c : i32 = iter.next().expect("Failed to read 3rd").parse().expect("Not a number");
 
     println!("a: {}, b: {}, c: {}",a,b,c);
+
+    input2.clear();
+
+
+    println!("Enter 3 numbers separated by whitespace");
+    io::stdin()
+    .read_line(&mut input2)
+    .expect("Error reading input3");
+
+    let temp : Vec<i32> = input2.split_whitespace()
+    .map(|s| s.parse().expect("Failed to parse"))
+    .collect();
+
+    let (a,b,c) = (temp[0],temp[1],temp[2]);
+
+    println!("a: {}, b: {}, c: {}",a,b,c);
+
+
 
 }
