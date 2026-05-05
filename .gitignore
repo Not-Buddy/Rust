@@ -1,12 +1,24 @@
-GUI/rustDruidGUI/target/
-GUI/egui_dempo/target/
-GUI/iced_demo/target/
-GUI/tauri_demo/node_modules/
-GUI/tauri_demo/src-tauri/target/
-GUI/rustDruidGUI/target/
-hello_rust/target/
-docs
-guessing_game/target
-variables/target
+# 1. Ignore all build directories
+**/target/
+**/node_modules/
+
+# 2. Ignore common binary extensions (Windows/Generic)
 *.exe
 *.pdb
+*.dll
+*.so
+*.dylib
+
+# 3. Handle extensionless binaries (Linux/macOS)
+# This ignores every file by default...
+*
+# ...BUT keeps the directories so we can see inside them
+!*/
+# ...AND "un-ignores" your actual source code and config files
+!*.rs
+!*.toml
+!*.md
+!*.lock
+!.gitignore
+!*.png
+!*.jpg
