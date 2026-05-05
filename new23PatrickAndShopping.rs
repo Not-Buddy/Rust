@@ -1,5 +1,4 @@
 use std::io;
-use std::cmp::*;
 
 fn main(){
     let mut input = String::new();
@@ -12,8 +11,8 @@ fn main(){
     
     let (a, b, c) = (temp[0], temp[1], temp[2]);
 
-    let min : i32 = min(2*a+2*b, a+b+c);
+    let minimum : i32 = [2 * a + 2 * b, a + b + c, 2*a + 2 * c, 2 * b + 2 * c].iter().min().copied().expect("Failed to iterate");
 
-    println!("{}",min);
+    println!("{}",minimum);
     
 }
