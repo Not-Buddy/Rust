@@ -33,28 +33,15 @@ fn main(){
         medsum += l2[i];
     }
 
-    if n<=0 && cupsum<=0 && medsum<=0 {
-        println!("NO");
-    }
-    else if n==1 && cupsum == 0 || medsum == 0{
+  
+    let shelves_for_cups = (cupsum + 5 - 1) / 5;
+    let shelves_for_medals = (medsum + 10 - 1) / 10;
+
+    if shelves_for_cups + shelves_for_medals <= n{
         println!("YES");
-    } 
-    else if n>=2{
-
-        let maxcups = n*5;
-        let maxmeds = n*10;
-
-        if maxcups + maxmeds <= cupsum + medsum {
-                    println!("YES");
-        }
-        else {
-            println!("NO");
-        }
-
     }
-    else{
+    else {
         println!("NO");
     }
-
 
 }
