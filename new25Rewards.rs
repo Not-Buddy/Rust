@@ -40,7 +40,17 @@ fn main(){
         println!("YES");
     } 
     else if n>=2{
-        println!("YES");
+
+        let maxcups = n*5;
+        let maxmeds = n*10;
+
+        if maxcups + maxmeds <= cupsum + medsum {
+                    println!("YES");
+        }
+        else {
+            println!("NO");
+        }
+
     }
     else{
         println!("NO");
