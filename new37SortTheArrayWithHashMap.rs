@@ -64,8 +64,4 @@ fn main(){
     else {
         println!("no");
     }
-
-
-
-
 }
