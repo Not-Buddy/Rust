@@ -18,7 +18,7 @@ fn main(){
 
     let mut advance : i32 = 0;
     for i in 0..vec.len(){
-        if vec[i] >= k && k > 0{
+        if vec[i] >= k && vec[i] > 0{
             advance += 1;
         }
     }
