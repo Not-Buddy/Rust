@@ -4,14 +4,14 @@ fn main(){
     let mut input = String::new();
     io::stdin().read_line(&mut input).expect("Failed to read line");
     let mut temp = input.split_whitespace();
-    let n : i32 = temp.next().unwrap().parse().unwrap();
+    let mut n : i32 = temp.next().unwrap().parse().unwrap();
     input.clear();
     
     let mut strungs : Vec<String> = Vec::new();
     for _ in 0..n{
         input.clear();
         io::stdin().read_line(&mut input).expect("Failed to read line");
-        let strung : String = input.parse().unwrap();
+        let strung : String = input.clone();
         strungs.push(strung);
     }
 
@@ -20,11 +20,16 @@ fn main(){
             println!("{}",i);
         }
         else {
-            let mut temp = i.trim().chars();
-            let first = temp.next().unwrap();
-            let last = temp.last().unwrap();
-            println!("{}{}{}",first ,i.len()-3 ,last);
+            let mut chars = i.trim().chars();
+            let first = chars.next().unwrap();
+            let last = chars.last().unwrap();
+
+            let s = i.trim();
+            n = s.len() as i32;
+
+            println!("{}{}{}", first, n - 2, last);
         }
+
     }
 
 }
