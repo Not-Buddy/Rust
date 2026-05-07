@@ -37,7 +37,7 @@ fn main(){
         }
     }
 
-    vec[l..r + 1].reverse();
+    vec[l .. r+1].reverse();
 
     if vec == vec2{
         println!("yes");
