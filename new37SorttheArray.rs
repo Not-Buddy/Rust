@@ -15,6 +15,12 @@ fn main(){
     let mut vec2 : Vec<i32> = vec.clone();
     vec2.sort();
 
+    if vec == vec2 {
+        println!("yes");
+        println!("1 1");
+        return;
+    }
+
     let mut l = 0;
     let mut r = vec.len()-1;
     for i in 0..vec.len()-1{
