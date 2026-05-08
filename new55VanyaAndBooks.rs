@@ -1,27 +1,26 @@
 use std::io;
-
+use std::cmp::*;
+ 
 fn main() {
     let mut input = String::new();
     io::stdin().read_line(&mut input).unwrap();
-
+ 
     let mut temp = input.split_whitespace();
-    let n : i32 = temp.next().unwrap().parse().unwrap();    
+    let n : i64 = temp.next().unwrap().parse().unwrap();    
+    
+    let mut start = 1;
+    let mut total_digits = 0;
+    let mut length = 1; 
 
-    let mut vec : Vec<Vec<char>> = Vec::new();
+    while start <= n{
+        let end = min(n, start * 10 - 1);
+        let count_range = end - start + 1;
+        total_digits += count_range * length;
 
-    for i in 1..=n{
-        let single : Vec<char> = i.to_string().chars().collect();
-        // println!("{:?}",single);
-        vec.push(single);
+        start *= 10;
+        length +=1;
     }
 
-    let mut digits : i32 = 0;
-
-    for num in vec{
-        digits += num.len() as i32;
-    }
-
-    println!("{}",digits);
-
+    println!("{}",total_digits);
     
 }
