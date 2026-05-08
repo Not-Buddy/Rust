@@ -17,11 +17,15 @@ fn main() {
     input.clear();
 
     let mut steps : i32 = 0;
+    let mut storage : i32 = 0;
 
     for i in &vec{
-        let tp = min(&8,&i);
+
+        storage += i;
+        let tp = min(8,storage);
         k-=tp;
         steps += 1;
+        storage -= tp;
         if k<=0{
             break;
         }
