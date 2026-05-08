@@ -8,21 +8,26 @@ fn main() {
     let n = temp.next().unwrap().parse().unwrap();    
     
     let mut flag : bool = true;
+    let mut count : i32 = 0;
+    let mut pattern : String = String::new();
 
-    println!("{}",n);
     for _ in 0..n{
         for _ in 0..n{
             if flag == true{
-                print!("C");
+                pattern.push('C');
+                count += 1;
             }
             else {
-                print!(".");
+                pattern.push('.');
             }
             flag = !flag;
         }
-        println!("");
+        pattern.push('\n');
         if n%2==0{
             flag = !flag;
         } 
     }
+
+    println!("{}",count);
+    println!("{}",pattern);
 }
